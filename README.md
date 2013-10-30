@@ -89,10 +89,6 @@ Once you have a .NET assembly that implements one or more of the extension point
 
 The next time you restart Colectica Designer, your Addins will automatically be loaded.
 
-## Sample Addins Project
-
-Source code demonstrating each type of Addin is available at GitHub at <https://github.com/colectica/ColecticaSampleAddins>.
-
 ## Additional Extension Points
 
 Please [let us know](http://www.colectica.com/contact/) what additional extension points would be useful for you. We look forward to expanding the Addin possibilities based on your feedback.
