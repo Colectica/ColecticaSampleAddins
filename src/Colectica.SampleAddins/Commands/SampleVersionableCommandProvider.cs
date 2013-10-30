@@ -35,6 +35,7 @@ namespace Colectica.SampleAddins.Commands
             {
                 var command = new SampleCommandWithParameter(param, weight);
                 weight++;
+                result.Add(command);
             }
 
             return result;
