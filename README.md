@@ -10,21 +10,31 @@ Colectica Designer can be extended by developing Addins. Addins are developed as
 
 Adds a button to the main ribbon, and executes your code when the user clicks the button.
 
+[Sample Source Code](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Commands/SampleStandAloneCommand.cs)
+
 #### IVersionableCommand
 
 Adds a button to the ribbon for a particular item, and a menu item to the context menu for that item. Your code is executed when the user clicks the button or menu item.
+
+[Sample Source Code](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Commands/SampleVersionableCommand.cs)
 
 #### IVersionableCommandProvider
 
 Adds multiple buttons to the ribbon for an item, each of which executes the same code but with a different parameter.
 
+[Sample Source Code](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Commands/SampleVersionableCommandProvider.cs)
+
 #### IVersionableInitializerCommand
 
 Adds code that is executed when a new item is created.
 
+[Sample Source Code](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Commands/SampleVersionableInitializer.cs)
+
 #### INodeCommand
 
-Adds an item to the ribbon for a particular item in the navigator, and to the context menu for that item. 
+Adds an item to the ribbon for a particular item in the navigator, and to the context menu for that item.
+
+[Sample Source Code](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Commands/SampleNodeCommand.cs)
 
 ### Views
 
@@ -32,9 +42,13 @@ Adds an item to the ribbon for a particular item in the navigator, and to the co
 
 Adds a view that can be docked to any of the sides of Colectica Designer.
 
+Sample Source Code: [XAML](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Views/SampleDockingView.xaml), [CSharp](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Views/SampleDockingView.xaml.cs)
+
 #### IVersionableView
 
 Adds a content view for an item, like the built-in Editor and DDI views.
+
+Sample Source Code: [XAML](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Views/SampleVersionableView.xaml), [CSharp](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Views/SampleVersionableView.xaml.cs)
 
 ### Quality Statements
 
@@ -42,9 +56,13 @@ Adds a content view for an item, like the built-in Editor and DDI views.
 
 Collects information to be included in a Quality Statement.
 
+[Sample Source Code](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Quality/SampleQualityStatementInformationGatherer.cs)
+
 #### IQualityStatementItemFilter
 
 Filters which Quality Statements are currently displayed.
+
+[Sample Source Code](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Quality/SampleQualityStatementItemFilters.cs)
 
 ## Deploying Addins
 
