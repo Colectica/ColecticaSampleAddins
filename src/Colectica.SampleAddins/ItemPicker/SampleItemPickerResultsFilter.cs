@@ -10,7 +10,7 @@ namespace Colectica.SampleAddins.ItemPicker
 {
 
     /// <summary>
-    /// A ItemPickerResultsFilter Addin allows you to hide hwich
+    /// A ItemPickerResultsFilter Addin allows you to hide which
     /// results are displayed in the item picker.
     /// </summary>
     [Export(typeof(IItemPickerResultsFilter))]
