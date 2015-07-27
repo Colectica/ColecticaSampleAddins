@@ -79,5 +79,8 @@ namespace Colectica.SampleAddins.Commands
         {
             get { return 1000; }
         }
+
+
+        public CommandResult Result { get; set;}
     }
 }

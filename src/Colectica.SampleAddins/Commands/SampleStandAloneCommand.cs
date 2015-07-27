@@ -84,7 +84,7 @@ namespace Colectica.SampleAddins.Commands
             // to tell Designer about them.
             var newItems = new Collection<IVersionable>();
             newItems.Add(myStudy);
-            this.Api.Import(newItems);
+            this.Api.Import(newItems, true);
 
             // Add the new item to the ModifiedItems of the Result property,
             // to let Colectica know that you created something new.

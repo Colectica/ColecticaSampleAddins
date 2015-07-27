@@ -61,6 +61,17 @@ namespace Colectica.SampleAddins.Views
         {
             get { return 10; }
         }
+
+
+        public void Initialize(Algenta.Colectica.Navigator.NodeTypes.Node node, IVersionable item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool IsInCustomFieldsTab
+        {
+            get { return false; }
+        }
     }
 
     public class SampleVersionableViewModel : NotificationObject
