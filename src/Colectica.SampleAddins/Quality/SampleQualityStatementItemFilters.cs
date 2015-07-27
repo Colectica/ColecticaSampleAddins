@@ -26,13 +26,15 @@ namespace Colectica.SampleAddins.Quality
         public override QualityStatementItemState GetItemState(QualityStatementItem item)
         {
             // Show all items.
-            return QualityStatementItemState.Visible;
+            return new QualityStatementItemState() { Visibility = QualityStatementItemVisibility.Visible };
         }
     }
 
     [Export(typeof(IQualityStatementItemFilter))]
     public class ShowContactItems : QualityStatementItemFilterBase
     {
+        Random random = new Random();
+
         public ShowContactItems()
             : base("Only show contact items", 10)
         {
@@ -41,14 +43,23 @@ namespace Colectica.SampleAddins.Quality
 
         public override QualityStatementItemState GetItemState(QualityStatementItem item)
         {
+            var state = new QualityStatementItemState();
+
             // Only show items that contain the word "contact" in their label.
             string label = item.ComplianceConcept.Label.Current.ToLower();
             if (label.Contains("contact"))
             {
-                return QualityStatementItemState.Visible;
+                state.Visibility = QualityStatementItemVisibility.Visible;
+            }
+            else
+            {
+                state.Visibility = QualityStatementItemVisibility.Hidden;
             }
 
-            return QualityStatementItemState.Hidden;
+            // Chaos sort. It's a different order every time.
+            state.Weight = random.Next(1, 10000);
+
+            return state;
         }
     }
 }
