@@ -84,6 +84,7 @@
     <Compile Include="Commands\SampleVersionableInitializer.cs" />
     <Compile Include="ItemPicker\SampleItemPickerNavigation.cs" />
     <Compile Include="ItemPicker\SampleItemPickerResultsFilter.cs" />
+    <Compile Include="Miscellaneous\SampleNodeDisplayLabelProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quality\SampleQualityStatementInformationGatherer.cs" />
     <Compile Include="Quality\SampleQualityStatementItemFilters.cs" />
