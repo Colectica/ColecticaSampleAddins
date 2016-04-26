@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0-*",
+  "description": "Colectica.Portal.SampleAddins Class Library",
+  "authors": [ "jeremy" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "frameworks": {
+    "net451": {
+      "frameworkAssemblies": {
+        "System.ComponentModel.Composition": "4.0.0.0"
+      },
+      "dependencies": {
+        "ColecticaSDK": "5.2.5507"
+      }
+    }
+  },
+  "dependencies": {
+    "Colectica.Portal.Extensibility": "1.0.0"
+  },
+  "resource": "Views/**"
+}
