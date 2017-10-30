@@ -13,7 +13,7 @@ namespace Colectica.SampleAddins.Miscellaneous
     {
         public string GetDisplayLabelForItem(Algenta.Colectica.Model.Repository.RepositoryItemMetadata item)
         {
-            return item.Label.Best;
+            return item.ItemName.Best;
         }
     }
 }

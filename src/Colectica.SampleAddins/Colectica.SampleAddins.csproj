@@ -33,28 +33,26 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Algenta.Colectica.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\sdkbin\Algenta.Colectica.Model.dll</HintPath>
+    <Reference Include="Algenta.Colectica.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=60da220094b43ba7, processorArchitecture=MSIL">
+      <HintPath>..\packages\ColecticaSDK.5.3.6425\lib\net40\Algenta.Colectica.Model.dll</HintPath>
     </Reference>
-    <Reference Include="Algenta.Colectica.Model.Ddi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\sdkbin\Algenta.Colectica.Model.Ddi.dll</HintPath>
+    <Reference Include="Algenta.Colectica.Model.Ddi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=60da220094b43ba7, processorArchitecture=MSIL">
+      <HintPath>..\packages\ColecticaSDK.5.3.6425\lib\net40\Algenta.Colectica.Model.Ddi.dll</HintPath>
     </Reference>
-    <Reference Include="Algenta.Colectica.Repository.Client">
-      <HintPath>..\sdkbin\Algenta.Colectica.Repository.Client.dll</HintPath>
+    <Reference Include="Algenta.Colectica.Repository.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=60da220094b43ba7, processorArchitecture=MSIL">
+      <HintPath>..\packages\ColecticaSDK.5.3.6425\lib\net40\Algenta.Colectica.Repository.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Algenta.Colectica.ViewModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\sdkbin\Algenta.Colectica.ViewModel.dll</HintPath>
+    <Reference Include="Algenta.Colectica.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=60da220094b43ba7, processorArchitecture=MSIL">
+      <HintPath>..\packages\ColecticaSDK.5.3.6425\lib\net40\Algenta.Colectica.ViewModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Colectica.Reporting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=60da220094b43ba7, processorArchitecture=MSIL">
+      <HintPath>..\packages\ColecticaSDK.5.3.6425\lib\net40\Colectica.Reporting.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\sdkbin\log4net.dll</HintPath>
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Algenta.Colectica.Designer\packages\Newtonsoft.Json.5.0.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -85,9 +83,13 @@
     <Compile Include="ItemPicker\SampleItemPickerNavigation.cs" />
     <Compile Include="ItemPicker\SampleItemPickerResultsFilter.cs" />
     <Compile Include="Miscellaneous\SampleNodeDisplayLabelProvider.cs" />
+    <Compile Include="Options\SampleOptionsEditor.xaml.cs">
+      <DependentUpon>SampleOptionsEditor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quality\SampleQualityStatementInformationGatherer.cs" />
     <Compile Include="Quality\SampleQualityStatementItemFilters.cs" />
+    <Compile Include="SampleAddinManifest.cs" />
     <Compile Include="Views\SampleDockingView.xaml.cs">
       <DependentUpon>SampleDockingView.xaml</DependentUpon>
     </Compile>
@@ -98,8 +100,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Page Include="Options\SampleOptionsEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\SampleDockingView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -109,6 +114,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
