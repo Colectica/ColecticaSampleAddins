@@ -1,5 +1,7 @@
-
 /src/sdkbin
 /src/Colectica.SampleAddins/bin
-
 /src/Colectica.SampleAddins/obj
+.vs/
+artifacts/
+packages/
+*.user
