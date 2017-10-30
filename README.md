@@ -78,7 +78,13 @@ Filters which Quality Statements are currently displayed.
 
 ![A sample quality statement item filter](https://raw.github.com/Colectica/ColecticaSampleAddins/master/doc/img/quality-item-filter.png)
 
-[Sample Source Code](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Quality/SampleQualityStatementItemFilters.cs)
+Sample Source Code: [XAML](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Quality/SampleQualityStatementItemFilters.cs), [CSharp](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Quality/SampleQualityStatementItemFilters.cs)
+
+### Options
+
+Colectica Designer provides a framework for addins to provide an editor for addin-specific configuration options.
+
+[Sample Source Code](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Options/SampleOptionsEditor.xaml.cs)
 
 ## Deploying Addins
 
