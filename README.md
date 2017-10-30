@@ -84,7 +84,7 @@ Sample Source Code: [XAML](https://github.com/Colectica/ColecticaSampleAddins/bl
 
 Colectica Designer provides a framework for addins to provide an editor for addin-specific configuration options.
 
-Sample Source Code: [XAML](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Options/SampleOptionsEditor.xaml), [CSharp](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Options/SampleOptionsEditor.xaml)
+Sample Source Code: [XAML](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Options/SampleOptionsEditor.xaml), [CSharp](https://github.com/Colectica/ColecticaSampleAddins/blob/master/src/Colectica.SampleAddins/Options/SampleOptionsEditor.xaml.cs)
 
 ## Deploying Addins
 
