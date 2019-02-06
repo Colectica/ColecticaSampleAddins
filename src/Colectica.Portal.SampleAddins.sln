@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Colectica.Portal.SampleAddins", "Colectica.Portal.SampleAddins\Colectica.Portal.SampleAddins.xproj", "{EAFC81B7-8D69-49FE-8563-657F27C8B295}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Colectica.Portal.SampleAddins", "Colectica.Portal.SampleAddins\Colectica.Portal.SampleAddins.csproj", "{EAFC81B7-8D69-49FE-8563-657F27C8B295}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CF58BD2-09C5-4881-967C-09BDCB6317C4}
 	EndGlobalSection
 EndGlobal
