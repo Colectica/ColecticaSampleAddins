@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Colectica.Portal.SampleAddins", "Colectica.Portal.SampleAddins\Colectica.Portal.SampleAddins.csproj", "{EAFC81B7-8D69-49FE-8563-657F27C8B295}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colectica.SampleWebService", "Colectica.SampleWebService\Colectica.SampleWebService.csproj", "{B647988E-7A82-420A-92FB-FF8370D94F88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EAFC81B7-8D69-49FE-8563-657F27C8B295}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAFC81B7-8D69-49FE-8563-657F27C8B295}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAFC81B7-8D69-49FE-8563-657F27C8B295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B647988E-7A82-420A-92FB-FF8370D94F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B647988E-7A82-420A-92FB-FF8370D94F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B647988E-7A82-420A-92FB-FF8370D94F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B647988E-7A82-420A-92FB-FF8370D94F88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

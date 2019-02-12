@@ -6,4 +6,6 @@ artifacts/
 packages/
 *.user
 /src/Colectica.Portal.SampleAddins/obj
-/src/Colectica.Portal.SampleAddins/bin/Debug/net451
+/src/Colectica.Portal.SampleAddins/bin
+/src/Colectica.SampleWebService/bin
+/src/Colectica.SampleWebService/obj
