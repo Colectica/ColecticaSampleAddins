@@ -2,34 +2,19 @@
 
   <PropertyGroup>
     <Description>Colectica.Portal.SampleAddins Class Library</Description>
-    <TargetFramework>net451</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <AssemblyName>Colectica.Portal.SampleAddins</AssemblyName>
     <PackageId>Colectica.Portal.SampleAddins</PackageId>
-    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
-    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
-    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
   </PropertyGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
-    <PackageReference Include="ColecticaSDK" Version="5.4.7033" />
+  <ItemGroup>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="MigraDoc.DocumentObjectModel-WPF">
-      <HintPath>..\..\..\thirdparty\PDFSharp-MigraDocFoundation-1_32\MigraDoc\bin\MigraDoc.DocumentObjectModel-WPF.dll</HintPath>
-    </Reference>
-    <Reference Include="MigraDoc.Rendering-WPF">
-      <HintPath>..\..\..\thirdparty\PDFSharp-MigraDocFoundation-1_32\MigraDoc\bin\MigraDoc.Rendering-WPF.dll</HintPath>
-    </Reference>
-    <Reference Include="PdfSharp-WPF">
-      <HintPath>..\..\..\thirdparty\PDFSharp-MigraDocFoundation-1_32\MigraDoc\bin\PdfSharp-WPF.dll</HintPath>
-    </Reference>
+    <PackageReference Include="ColecticaSDK.Reporting" Version="6.1.7909" />
   </ItemGroup>
 
 </Project>
